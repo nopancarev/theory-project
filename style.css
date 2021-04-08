@@ -20,6 +20,7 @@ body {
   letter-spacing: 2px;
   color: var(--gray);
   line-height: 2;
+  font-weight: 200;
 }
 h1,
 h2,
@@ -46,7 +47,22 @@ a {
 ul {
   list-style: none;
 }
+button {
+  padding: 10px 15px;
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: var(--transition);
+  margin-top: 15px;
+}
+button :hover {
+  background: var(--darkenBlue);
+}
+
 /* HEADER */
+
 header {
   background-image: url(banner.jpg);
   background-size: cover;
@@ -89,6 +105,100 @@ hgroup h4 {
   font-size: 1.5rem;
   color: var(--lightGray);
 }
-hgroup h4 span{
-    text-transform: uppercase;
+hgroup h4 span {
+  text-transform: uppercase;
+}
+
+/* SECTION FIRST */
+
+.first {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 80px 0;
+}
+.first article:nth-child(1) {
+  border-right: 1px solid var(--textColor);
+  padding: 0 40px;
+}
+.first article:nth-child(2) {
+  border-right: 1px solid var(--textColor);
+  padding: 0 40px;
+}
+.first article:nth-child(3) {
+  padding: 0 40px;
+}
+.first article h2 {
+  color: var(--blue);
+  line-height: 1.5;
+}
+
+/* SECTION TEAM */
+
+.team {
+  background-color: var(--blue);
+  padding: 80px 0;
+  text-align: center;
+}
+.team h2 {
+  color: var(--white);
+  font-size: 3rem;
+}
+.team h2 + p {
+  color: var(--lightGray);
+}
+.team article {
+  float: left;
+  width: 25%;
+  margin-top: 50px;
+}
+.team article .wrap {
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  padding: 40px;
+  margin: 0 20px;
+}
+.team article .wrap img {
+  border-radius: 50%;
+}
+.team article:first-child .wrap {
+  margin-left: 0px;
+}
+team article:last-child .wrap {
+  margin-right: 0px;
+}
+.team article .wrap h3 {
+  color: var(--white);
+  font-size: 1.2rem;
+}
+.team article .wrap h5 {
+  color: var(--lightGray);
+}
+
+/* SECTION BLOG */
+
+.blog {
+  padding: 80px 0;
+}
+.blog h2 {
+  text-align: center;
+  font-size: 3rem;
+  color: var(--blue);
+}
+.blog h2 + p {
+  text-align: center;
+}
+.blog img {
+  width: 100%;
+}
+.blog article {
+  width: 50%;
+  float: left;
+  padding: 30px;
+}
+.blog h3 {
+  color: var(--blue);
+  font-size: 2rem;
+}
+.blog p {
+  padding: 20px;
 }
